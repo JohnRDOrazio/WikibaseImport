@@ -32,7 +32,7 @@ class EntityImporterFactoryTest extends \PHPUnit_Framework_TestCase {
 	private function newEntityImporterFactory() {
 		return new EntityImporterFactory(
 			WikibaseRepo::getEntityStore(),
-			wfGetLB(),
+			MediaWikiServices::getDBLoadBalancer(),
 			$this->newLogger(),
 			'https://www.wikidata.org/w/api.php'
 		);

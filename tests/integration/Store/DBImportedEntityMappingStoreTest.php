@@ -45,7 +45,7 @@ class DBImportedEntityMappingStoreTest extends \MediaWikiTestCase {
 
 	private function newDBImportedEntityMappingStore() {
 		return new DBImportedEntityMappingStore(
-			wfGetLB(),
+			MediaWikiServices::getDBLoadBalancer(),
 			new BasicEntityIdParser()
 		);
 	}
