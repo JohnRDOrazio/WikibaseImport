@@ -37,7 +37,7 @@ class ApiEntityLookupIntegrationTest extends \PHPUnit_Framework_TestCase {
 	private function getApiEntityLookup() {
 		$entityImporterFactory = new EntityImporterFactory(
 			WikibaseRepo::getEntityStore(),
-			MediaWikiServices::getDBLoadBalancer(),
+			MediaWikiServices::getInstance()->getDBLoadBalancer(),
 			$this->newLogger(),
 			'https://www.wikidata.org/w/api.php'
 		);

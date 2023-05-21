@@ -120,7 +120,7 @@ class ImportEntities extends \Maintenance {
 	private function newEntityImporter() {
 		$entityImporterFactory = new EntityImporterFactory(
 			WikibaseRepo::getEntityStore(),
-			MediaWikiServices::getDBLoadBalancer(),
+			MediaWikiServices::getInstance()->getDBLoadBalancer(),
 			$this->logger,
 			$this->getConfig()->get( 'WBImportSourceApi' )
 		);
