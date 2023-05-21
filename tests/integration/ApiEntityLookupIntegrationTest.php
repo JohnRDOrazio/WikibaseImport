@@ -8,6 +8,7 @@ use Wikibase\DataModel\Entity\ItemId;
 use Wikibase\DataModel\Entity\PropertyId;
 use Wikibase\Import\EntityImporterFactory;
 use Wikibase\Repo\WikibaseRepo;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group WikibaseImport

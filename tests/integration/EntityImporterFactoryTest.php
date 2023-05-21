@@ -7,6 +7,7 @@ use Monolog\Handler\NullHandler;
 use Wikibase\Import\EntityImporter;
 use Wikibase\Import\EntityImporterFactory;
 use Wikibase\Repo\WikibaseRepo;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group WikibaseImport

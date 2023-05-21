@@ -13,6 +13,7 @@ use Wikibase\Import\LoggerFactory;
 use Wikibase\Import\QueryRunner;
 use Wikibase\Import\PropertyIdLister;
 use Wikibase\Repo\WikibaseRepo;
+use MediaWiki\MediaWikiServices;
 
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {

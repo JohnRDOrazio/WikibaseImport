@@ -6,6 +6,7 @@ use Wikibase\DataModel\Entity\BasicEntityIdParser;
 use Wikibase\DataModel\Entity\ItemId;
 use Wikibase\DataModel\Entity\PropertyId;
 use Wikibase\Import\Store\DBImportedEntityMappingStore;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group WikibaseImport
